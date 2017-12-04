@@ -6,7 +6,7 @@ __email__ = "michiel@kranenburg.io"
 import sys
 
 if __name__ == '__main__':
-    salt = 'tfd;kfoA,.iyewrkldJKD'
+    constant = 'tfd;kfoA,.iyewrkldJKD'
 
     try:
         hash = sys.argv[1]
@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     def decode(x):
         global index
-        x = chr(int(x, 16) ^ ord(salt[index-1]))
+        x = chr(int(x, 16) ^ ord(constant[index-1]))
         index += 1
         return x
 
