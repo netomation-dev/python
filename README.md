@@ -1,2 +1,2 @@
-Netomation B.V.
+Netomation
 ===============
